@@ -656,7 +656,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e76943ac7e7394f3e969f0c048b26639, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SpawnOnStart: 2
+  SpawnOnStart: 1
   MeshMaterial: {fileID: 2100000, guid: 31369b17de7023d45b05caaf10f67dcf, type: 2}
   Colliders: 1
   CutHoles: 0

@@ -7,7 +7,7 @@ public class PlantGrowth : MonoBehaviour
     public float maxScale = 4f;
 
     private bool isGrowing = false;
-    private bool hasFullyGrown = false; // ✅ Nuevo: para evitar crecimiento infinito
+    private bool hasFullyGrown = false; 
     private float timer = 0f;
     private Vector3 originalScale;
 
@@ -25,7 +25,7 @@ public class PlantGrowth : MonoBehaviour
             float scale = Mathf.Lerp(originalScale.x, maxScale, t);
             transform.localScale = new Vector3(scale, scale, scale);
 
-            // ✅ Marca como completado cuando alcanza el tamaño máximo
+           
             if (Mathf.Approximately(scale, maxScale))
             {
                 isGrowing = false;
@@ -36,7 +36,7 @@ public class PlantGrowth : MonoBehaviour
 
     public void StartWatering()
     {
-        if (hasFullyGrown) return; // ✅ Evita reiniciar si ya creció
+        if (hasFullyGrown) return; 
         isGrowing = true;
     }
 
